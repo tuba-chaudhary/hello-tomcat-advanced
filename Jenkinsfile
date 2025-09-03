@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         WAR_FILE = 'target/hello-tomcat-advanced.war'
-        TOMCAT_URL = 'http://localhost:7080'
+        TOMCAT_URL = 'http://localhost:8070'
         TOMCAT_USER = 'chaudhary tuba'
         TOMCAT_PASSWORD = '#tuba2102#'
     }
