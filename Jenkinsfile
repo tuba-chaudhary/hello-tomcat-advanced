@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JAVA_HOME'
-        maven 'MAVEN_HOME'
+        jdk 'JDK21'        // Use exact name from Jenkins Global Tool Config
+        maven 'Maven-3.9.11'
     }
 
     environment {
         WAR_FILE = "target/hello-tomcat-advanced.war"
         TOMCAT_URL = "http://localhost:7080"
-        TOMCAT_USER = "chaudhary tuba"       // replace with your Tomcat username
-        TOMCAT_PASSWORD = "#tuba2102#"   // replace with your Tomcat password
+        TOMCAT_USER = "chaudhary tuba"       // update with your Tomcat username
+        TOMCAT_PASSWORD = "#tuba2102#"   // update with your Tomcat password
     }
 
     stages {
